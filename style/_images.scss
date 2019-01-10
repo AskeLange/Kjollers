@@ -1,0 +1,61 @@
+
+
+.images .content-container {
+
+  position: absolute;
+  top: 53%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: max-content;
+
+  .element {
+
+    display: inline-block;
+    vertical-align: top;
+    width: min-content;
+    
+    .title {
+
+      font-size: 16px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+
+    }
+
+    .image {
+
+      width: 380px;
+      height: 380px;
+
+      background-position: center;
+      background-size: cover;
+
+      margin-bottom: 24px;
+
+    }
+
+    .desc {
+
+      width: 100%;
+      font-size: 16px;
+      font-weight: 300;
+      text-align: justify;
+
+    }
+
+    &.left {
+
+      margin-right: 96px;
+      .title { text-align: left; }
+
+    }
+
+    &.right .title {
+    
+      text-align: right;
+    
+    }
+
+  }
+  
+}

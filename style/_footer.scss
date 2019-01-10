@@ -1,0 +1,67 @@
+
+
+.view.footer .content-container {
+
+  position: absolute;
+  top: 40%; left: 50%;
+  transform: translate(-50%,-50%);
+
+  width: 600px;
+
+  .elem {
+
+    position: relative;
+
+    &:before {
+
+      content: '#';
+
+      display: block;
+      position: absolute;
+      right: 0; top: 50%;
+      transform: translateY(-50%);
+
+      font-size: 12px;
+
+    }
+
+  }
+
+  .section {
+
+    margin-bottom: 16px;
+    line-height: 1.8;
+
+    a {
+
+      position: relative;
+      display: block;
+      text-decoration: none;
+      color: lighten($seco, 20%);
+      transition: 80ms $trans-base;
+
+      &:hover {
+
+        color: $seco;
+        padding-left: 4px;
+
+      }
+
+    }
+
+  }
+
+  .icon {
+
+    position: absolute;
+    top: 16px; right: 0; 
+    width: 156px;
+    fill: $seco;
+    
+    transform: rotate(90deg);
+    opacity: .7;
+
+
+  }
+
+}
